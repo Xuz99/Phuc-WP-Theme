@@ -1,9 +1,9 @@
 # Phuc WordPress Theme
-## A responsive, HTML5, modern designed WordPress theme.
+A responsive, HTML5, modern designed WordPress theme.
 
 ## Tech
 
-## Development
+### Development
 
 	* SublineText 3.2.2
 	* WAMP 3.2.3
