@@ -3,8 +3,7 @@ Theme Name: Phuc
 Author: John Davidson
 Version: 0.1
 */
-@import "node_modules/tailwindcss/base.css";
 
-@import "node_modules/tailwindcss/components.css";
-
-@import "node_modules/tailwindcss/utilities.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

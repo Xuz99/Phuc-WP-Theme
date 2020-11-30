@@ -1,15 +1,8 @@
+<?php get_header(); ?>
 
-<?php get_header(); 
+<p class="relative z-0 h-64" style="background-image: url(<?php echo get_theme_file_uri('/images/header_bg.jpg'); ?>"><?php bloginfo('description'); ?></p>
 
-	while(have_posts()) {
-		 the_post(); ?>
-		 <h2><a href="<?php the_permalink(); ?>">
-		 	<?php the_title(); ?>	
-		 	</a>
-		 </h2>
-		 <p><?php the_content(); ?></p>
-		 <hr>
-	<?php }
+<h1 class="bg-red-200">This is content from the index.php</h1>
+	 
 
- 	get_footer();
-?>
+<?php get_footer(); ?>

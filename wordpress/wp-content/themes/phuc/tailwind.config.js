@@ -1,8 +1,6 @@
+// tailwind.config.js
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
+  future: {},
   purge: [],
   theme: {
     extend: {},
