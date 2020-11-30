@@ -8,9 +8,9 @@
  				<p>You are viewing the: ID: <?php echo wp_get_post_parent_id(get_the_ID()); ?> <?php the_title(); ?> page</p>
  				<p>
  				<?php
- 					if (wp_get_post_parent_id(get_the_ID())) {
- 						echo "I am a child page. this will need to be edited in the future to avoid bad code";
- 					}
+ 					if (wp_get_post_parent_id(get_the_ID())) { ?>
+ 						 <span><a href=""></a></span>
+ 					<?php }
  				?>
  				</p>
 	 			<h2 class="text-5xl "><?php the_title(); ?></h2>
