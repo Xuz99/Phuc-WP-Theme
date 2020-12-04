@@ -14,12 +14,31 @@
  						 <span> >> <?php the_title(); ?></span>
  					<?php }
  				?>
+ 				<?php
+ 				$testArray = get_pages(array(
+ 					'child_of' => get_the_ID()
+ 				));
+
+ 				if ($theParent or $testArray) { ?>
  				<aside class="float-right border border-5 border-blue-600 p-3">
+ 				<h2><a href="<?php echo get_permalink($theParent) ?>">
+ 					<?php echo get_the_title($theParent) ?></a></h2>
 	 			<?php 
-			 		wp_list_pages();
+	 				if ($theParent) {
+	 					$findChildrenOf = $theParent;
+	 				} else {
+	 					$findChildrenOf = get_the_ID();
+	 				}
+
+			 		wp_list_pages(array(
+			 			'title_li' => NULL, 
+			 			'child_of' => $findChildrenOf,
+			 			'sort_column' => 'menu_order'
+			 		));
 			 	?>
 	 			</aside>
  				</p>
+ 				<?php } ?>
  				
 	 		
 	 		
